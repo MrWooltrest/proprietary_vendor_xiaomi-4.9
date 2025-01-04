@@ -165,15 +165,6 @@ PRODUCT_PACKAGES += \
     sensors.ssc \
     vendor.qti.hardware.dsp@1.0 \
     libChamomilePA \
-    libOmxAacDec \
-    libOmxAmrDec \
-    libOmxAmrwbplusDec \
-    libOmxApeDec \
-    libOmxDsdDec \
-    libOmxEvrcDec \
-    libOmxG711Dec \
-    libOmxQcelp13Dec \
-    libOmxWmaDec \
     libactuator_ad5816g \
     libactuator_ad5823 \
     libactuator_ak7345 \
