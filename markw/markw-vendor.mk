@@ -751,7 +751,6 @@ PRODUCT_PACKAGES += \
     libubifocus \
     libvqzip \
     libwvaidl \
-    libswdap \
     libswgamedap \
     libswvqe \
     com.qualcomm.qti.dpm.api@1.0_vendor \
@@ -816,6 +815,7 @@ PRODUCT_PACKAGES += \
     libfpservice \
     libgdtap \
     libhdcpsrm \
+    libhwdap \
     libizat_client_api \
     libizat_core \
     liblbs_core \
