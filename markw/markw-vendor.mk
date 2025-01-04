@@ -169,15 +169,6 @@ PRODUCT_PACKAGES += \
     sensors.ssc \
     vendor.qti.hardware.dsp@1.0 \
     libChamomilePA \
-    libOmxAacDec \
-    libOmxAmrDec \
-    libOmxAmrwbplusDec \
-    libOmxApeDec \
-    libOmxDsdDec \
-    libOmxEvrcDec \
-    libOmxG711Dec \
-    libOmxQcelp13Dec \
-    libOmxWmaDec \
     libactuator_dw9763 \
     libactuator_dw9763_ofilm_imx258 \
     libactuator_dw9763_qtech_imx258 \
