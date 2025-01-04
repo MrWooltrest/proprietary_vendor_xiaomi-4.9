@@ -64,7 +64,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/xiaomi/markw/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
     vendor/xiaomi/markw/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
-    vendor/xiaomi/markw/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     vendor/xiaomi/markw/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/xiaomi/markw/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/xiaomi/markw/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
@@ -74,7 +73,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/xiaomi/markw/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/xiaomi/markw/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
-    vendor/xiaomi/markw/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
     vendor/xiaomi/markw/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     vendor/xiaomi/markw/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
     vendor/xiaomi/markw/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
@@ -130,7 +128,6 @@ PRODUCT_PACKAGES += \
     libaudioalsa \
     libc2d30_bltlib \
     libconfigdb \
-    libdapparamstorage \
     libdiag \
     libdsi_netctrl \
     libdsutils \
@@ -170,7 +167,6 @@ PRODUCT_PACKAGES += \
     libxml \
     sensor_calibrate \
     sensors.ssc \
-    vendor.dolby.hardware.dms@2.0 \
     vendor.qti.hardware.dsp@1.0 \
     libChamomilePA \
     libOmxAacDec \
@@ -610,7 +606,6 @@ PRODUCT_PACKAGES += \
     libchromatix_s5k5e8_sunny_snapshot \
     libchromatix_s5k5e8_sunny_zsl_preview_3a \
     libchromatix_s5k5e8_sunny_zsl_video_3a \
-    libdeccfg \
     libdrc \
     libflash_pmic \
     libjpegdhw \
@@ -745,14 +740,10 @@ PRODUCT_PACKAGES += \
     libremosaic_daemon \
     libseemore \
     libsmwrapper \
-    libstagefright_soft_ac4dec \
-    libstagefright_soft_ddpdec \
     libtrueportrait \
     libubifocus \
     libvqzip \
     libwvaidl \
-    libswgamedap \
-    libswvqe \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     com.qualcomm.qti.imscmservice@2.0 \
     com.qualcomm.qti.imscmservice@2.1 \
@@ -806,7 +797,6 @@ PRODUCT_PACKAGES += \
     libcpion \
     libdataitems \
     libdisp-aba \
-    libdlbdsservice \
     libdpmqmihal \
     libdrmfs \
     libdrmtime \
@@ -815,7 +805,6 @@ PRODUCT_PACKAGES += \
     libfpservice \
     libgdtap \
     libhdcpsrm \
-    libhwdap \
     libizat_client_api \
     libizat_core \
     liblbs_core \
@@ -867,7 +856,6 @@ PRODUCT_PACKAGES += \
     qtimutex \
     vendor.display.color@1.0 \
     vendor.display.postproc@1.0 \
-    vendor.dolby.hardware.dms@2.0-impl \
     vendor.qti.data.factory@2.0 \
     vendor.qti.data.factory@2.1 \
     vendor.qti.data.factory@2.2 \
@@ -982,7 +970,6 @@ PRODUCT_PACKAGES += \
     dpmapi \
     qcrilhook \
     manifest_android.hardware.drm-service.widevine.xml \
-    manifest_vendor.dolby.hardware.dms.xml \
     vendor.qti.gnss@4.0-service.xml \
     adpl \
     adsprpcd \
@@ -995,7 +982,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.widevine \
     qcrild \
     vendor.display.color@1.0-service \
-    vendor.dolby.hardware.dms@2.0-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.perf@2.2-service \
     vendor.qti.hardware.tui_comm@1.0-service-qti \
