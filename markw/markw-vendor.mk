@@ -174,14 +174,21 @@ PRODUCT_PACKAGES += \
     libOmxG711Dec \
     libOmxQcelp13Dec \
     libOmxWmaDec \
+    libactuator_ad5816g \
+    libactuator_ad5823 \
+    libactuator_ak7345 \
+    libactuator_ak7371 \
+    libactuator_bu64244gwz \
+    libactuator_bu64291gwz \
+    libactuator_bu64297 \
+    libactuator_dw9714 \
+    libactuator_dw9716 \
+    libactuator_dw9761b \
     libactuator_dw9763 \
-    libactuator_dw9763_ofilm_imx258 \
-    libactuator_dw9763_qtech_imx258 \
-    libactuator_dw9763_qtech_ov13855 \
-    libactuator_dw9763_sunny_imx258 \
+    libactuator_lc898122 \
+    libactuator_lc898212xd \
     libactuator_lc898212xd_qc2002 \
-    libactuator_ofilm_dw9763 \
-    libactuator_pseudo \
+    libactuator_rohm_bu64243gwz \
     libadm \
     libadpcmdec \
     libcapiv2svacnn \
