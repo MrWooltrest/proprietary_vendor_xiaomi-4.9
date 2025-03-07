@@ -16802,6 +16802,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libmpbase.so",
             ],
             shared_libs: [
+                "libcamshim",
                 "libc",
                 "libm",
                 "libstdc++_vendor",
