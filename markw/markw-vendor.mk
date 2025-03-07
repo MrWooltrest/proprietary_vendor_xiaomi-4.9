@@ -159,14 +159,9 @@ PRODUCT_PACKAGES += \
     sensors.ssc \
     vendor.qti.hardware.dsp@1.0 \
     libChamomilePA \
+    libactuator_bu64244gwz \
+    libactuator_bu64291gwz \
     libactuator_dw9763 \
-    libactuator_dw9763_ofilm_imx258 \
-    libactuator_dw9763_qtech_imx258 \
-    libactuator_dw9763_qtech_ov13855 \
-    libactuator_dw9763_sunny_imx258 \
-    libactuator_lc898212xd_qc2002 \
-    libactuator_ofilm_dw9763 \
-    libactuator_pseudo \
     libadm \
     libadpcmdec \
     libcapiv2svacnn \
