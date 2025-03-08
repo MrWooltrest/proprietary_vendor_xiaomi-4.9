@@ -28,9 +28,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/vendor/etc/camera/csidtg_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/csidtg_chromatix.xml \
     vendor/xiaomi/markw/proprietary/vendor/etc/camera/msm8953_camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/msm8953_camera.xml \
     vendor/xiaomi/markw/proprietary/vendor/etc/camera/ofilm_s5k3l8_f3l8yam_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ofilm_s5k3l8_f3l8yam_chromatix.xml \
+    vendor/xiaomi/markw/proprietary/vendor/etc/camera/ov5670_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov5670_chromatix.xml \
     vendor/xiaomi/markw/proprietary/vendor/etc/camera/ov5670_f5670bq_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov5670_f5670bq_chromatix.xml \
     vendor/xiaomi/markw/proprietary/vendor/etc/camera/qtech_ov5670_f5670bq_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/qtech_ov5670_f5670bq_chromatix.xml \
     vendor/xiaomi/markw/proprietary/vendor/etc/camera/qtech_s5k3l8_f3l8yam_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/qtech_s5k3l8_f3l8yam_chromatix.xml \
+    vendor/xiaomi/markw/proprietary/vendor/etc/camera/s5k3l8_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3l8_chromatix.xml \
     vendor/xiaomi/markw/proprietary/vendor/etc/camera/s5k3l8_f3l8yam_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3l8_f3l8yam_chromatix.xml \
     vendor/xiaomi/markw/proprietary/vendor/etc/camera/s5k4h8_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k4h8_chromatix.xml \
     vendor/xiaomi/markw/proprietary/vendor/etc/camera/s5k5e8_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k5e8_chromatix.xml \
