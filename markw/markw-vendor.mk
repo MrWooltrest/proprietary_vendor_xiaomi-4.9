@@ -377,7 +377,6 @@ PRODUCT_PACKAGES += \
     libmmcamera2_is \
     libmmcamera2_isp_modules \
     libmmcamera2_mct \
-    libmmcamera2_mct_shimlayer \
     libmmcamera2_pp_buf_mgr \
     libmmcamera2_pproc_modules \
     libmmcamera2_q3a_core \
@@ -385,28 +384,20 @@ PRODUCT_PACKAGES += \
     libmmcamera2_stats_algorithm \
     libmmcamera2_stats_modules \
     libmmcamera_atmel_at24c32e_eeprom \
+    libmmcamera_cac3_lib \
     libmmcamera_chromaflash_lib \
     libmmcamera_csidtg \
     libmmcamera_dbg \
     libmmcamera_dcrf_lib \
     libmmcamera_dummyalgo \
     libmmcamera_dw9761b_2d_eeprom \
+    libmmcamera_dw9761b_eeprom \
     libmmcamera_eebinparse \
     libmmcamera_eeprom_util \
     libmmcamera_eztune_module \
-    libmmcamera_facedetection_lib \
     libmmcamera_faceproc \
-    libmmcamera_faceproc2 \
     libmmcamera_hdr_gb_lib \
     libmmcamera_imglib \
-    libmmcamera_imx258 \
-    libmmcamera_imx258_gt24c16_eeprom \
-    libmmcamera_imx258_gt24c32_eeprom \
-    libmmcamera_imx258_mono \
-    libmmcamera_imx258_mono_gt24c32_eeprom \
-    libmmcamera_imx258_ofilm \
-    libmmcamera_imx258_qtech \
-    libmmcamera_imx258_sunny \
     libmmcamera_isp_abf40 \
     libmmcamera_isp_bcc40 \
     libmmcamera_isp_be_stats44 \
@@ -444,55 +435,44 @@ PRODUCT_PACKAGES += \
     libmmcamera_le2464c_eeprom \
     libmmcamera_le2464c_master_eeprom \
     libmmcamera_llvd \
-    libmmcamera_ofilm_imx258_eeprom \
-    libmmcamera_ofilm_s5k3l8_eeprom \
-    libmmcamera_ofilm_s5k5e8_eeprom \
+    libmmcamera_onsemi_cat24c16_eeprom \
+    libmmcamera_onsemi_cat24c32_eeprom \
     libmmcamera_optizoom_lib \
-    libmmcamera_ov13855_qtech \
-    libmmcamera_paaf_lib \
+    libmmcamera_ov5670 \
+    libmmcamera_ov5670_eeprom \
+    libmmcamera_ov5670_sunny \
     libmmcamera_pdaf \
     libmmcamera_pdafcamif \
     libmmcamera_ppbase_module \
-    libmmcamera_ppeiscore \
-    libmmcamera_qtech_imx258_eeprom \
-    libmmcamera_qtech_ov13855_eeprom \
-    libmmcamera_qtech_s5k3l8_eeprom \
-    libmmcamera_qtech_s5k5e8_eeprom \
-    libmmcamera_quadracfa \
-    libmmcamera_rohm_brcg064gwz_3_eeprom \
+    libmmcamera_qtech_f3l8yam_eeprom \
+    libmmcamera_qtech_f5670bq_eeprom \
     libmmcamera_s5k3l8 \
+    libmmcamera_s5k3l8_eeprom \
     libmmcamera_s5k3l8_mono \
-    libmmcamera_s5k3l8_ofilm \
-    libmmcamera_s5k3l8_qtech \
-    libmmcamera_s5k3l8_sunny \
-    libmmcamera_s5k5e8_ofilm \
-    libmmcamera_s5k5e8_qtech \
-    libmmcamera_s5k5e8_sunny \
+    libmmcamera_s5k4h8 \
+    libmmcamera_s5k5e8 \
+    libmmcamera_s5k5e8_eeprom \
     libmmcamera_stillmore_lib \
-    libmmcamera_sunny_imx258_eeprom \
-    libmmcamera_sunny_s5k3l8_eeprom \
-    libmmcamera_sunny_s5k5e8_eeprom \
-    libmmcamera_sw2d_lib \
+    libmmcamera_sunny_8865_eeprom \
+    libmmcamera_sunny_q13v06k_eeprom \
+    libmmcamera_sunny_q5v41b_eeprom \
     libmmcamera_sw_tnr \
     libmmcamera_thread_services \
     libmmcamera_tintless_algo \
     libmmcamera_tintless_bg_pca_algo \
     libmmcamera_trueportrait_lib \
     libmmcamera_truly_cma481_eeprom \
-    libmmcamera_truly_cmb433_eeprom \
     libmmcamera_tuning \
     libmmcamera_tuning_lookup \
     libmmcamera_ubifocus_lib \
     libmmjpeg \
     libmmqjpeg_codec \
     libmmqjpegdma \
-    libmpbase \
     libois_lc898122 \
     liboptizoom \
     libqomx_jpegdec \
     libqomx_jpegenc \
     libqomx_jpegenc_pipe \
-    libremosaic_daemon \
     libseemore \
     libsmwrapper \
     libtrueportrait \

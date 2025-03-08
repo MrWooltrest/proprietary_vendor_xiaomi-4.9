@@ -8335,40 +8335,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmcamera2_mct_shimlayer",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera2_mct_shimlayer.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libdl",
-                "libmmcamera2_mct",
-                "libmmcamera2_stats_modules",
-                "libmmcamera2_iface_modules",
-                "libmmcamera2_isp_modules",
-                "libmmcamera2_sensor_modules",
-                "libmmcamera2_pproc_modules",
-                "libmmcamera2_imglib_modules",
-                "libmmcamera_thread_services",
-                "libmmcamera_dbg",
-                "libc++",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmmcamera2_pp_buf_mgr",
     owner: "xiaomi",
     strip: {
@@ -8576,6 +8542,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmmcamera_cac3_lib",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib/libmmcamera_cac3_lib.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libdl",
+                "libOpenCL",
+                "libc++",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmmcamera_chromaflash_lib",
     owner: "xiaomi",
     strip: {
@@ -8738,6 +8730,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmmcamera_dw9761b_eeprom",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libmmcamera_dw9761b_eeprom.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libmmcamera_eeprom_util",
+                "libc++",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmmcamera_eebinparse",
     owner: "xiaomi",
     strip: {
@@ -8817,33 +8836,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmcamera_facedetection_lib",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_facedetection_lib.so",
-            ],
-            shared_libs: [
-                "libdl",
-                "libcutils",
-                "liblog",
-                "libmmcamera_dbg",
-                "libc++",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmmcamera_faceproc",
     owner: "xiaomi",
     strip: {
@@ -8863,32 +8855,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_faceproc2",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_faceproc2.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -8938,217 +8904,6 @@ cc_prebuilt_library_shared {
                 "libmmcamera_dbg",
                 "libfastcvopt",
                 "libc++",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_imx258",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_imx258.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_imx258_gt24c16_eeprom",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_imx258_gt24c16_eeprom.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmmcamera_eeprom_util",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_imx258_gt24c32_eeprom",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_imx258_gt24c32_eeprom.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmmcamera_eeprom_util",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_imx258_mono",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_imx258_mono.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_imx258_mono_gt24c32_eeprom",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_imx258_mono_gt24c32_eeprom.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmmcamera_eeprom_util",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_imx258_ofilm",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_imx258_ofilm.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_imx258_qtech",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_imx258_qtech.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_imx258_sunny",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_imx258_sunny.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libdl",
                 "libc",
                 "libm",
             ],
@@ -10121,8 +9876,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libmmcamera_le2464c_eeprom.so",
             ],
             shared_libs: [
-                "liblog",
                 "libcutils",
+                "libmmcamera2_sensor_modules",
                 "libmmcamera_eeprom_util",
                 "libc++",
                 "libdl",
@@ -10180,6 +9935,7 @@ cc_prebuilt_library_shared {
                 "libdl",
                 "libcutils",
                 "liblog",
+                "libadsprpc",
                 "libc++",
                 "libc",
                 "libm",
@@ -10192,7 +9948,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmcamera_ofilm_imx258_eeprom",
+    name: "libmmcamera_onsemi_cat24c16_eeprom",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -10200,7 +9956,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libmmcamera_ofilm_imx258_eeprom.so",
+                "proprietary/vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so",
             ],
             shared_libs: [
                 "liblog",
@@ -10219,7 +9975,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmcamera_ofilm_s5k3l8_eeprom",
+    name: "libmmcamera_onsemi_cat24c32_eeprom",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -10227,39 +9983,12 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libmmcamera_ofilm_s5k3l8_eeprom.so",
+                "proprietary/vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so",
             ],
             shared_libs: [
-                "liblog",
                 "libcutils",
                 "libmmcamera_eeprom_util",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_ofilm_s5k5e8_eeprom",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_ofilm_s5k5e8_eeprom.so",
-            ],
-            shared_libs: [
                 "liblog",
-                "libcutils",
-                "libmmcamera_eeprom_util",
                 "libc++",
                 "libdl",
                 "libc",
@@ -10300,7 +10029,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmcamera_ov13855_qtech",
+    name: "libmmcamera_ov5670",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -10308,7 +10037,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libmmcamera_ov13855_qtech.so",
+                "proprietary/vendor/lib/libmmcamera_ov5670.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -10325,7 +10054,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmcamera_paaf_lib",
+    name: "libmmcamera_ov5670_eeprom",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -10333,15 +10062,39 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libmmcamera_paaf_lib.so",
+                "proprietary/vendor/lib/libmmcamera_ov5670_eeprom.so",
             ],
             shared_libs: [
-                "libdl",
-                "libcutils",
                 "liblog",
-                "libmmcamera_dbg",
-                "libmmcamera2_frame_algorithm",
+                "libcutils",
+                "libmmcamera_eeprom_util",
                 "libc++",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera_ov5670_sunny",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libmmcamera_ov5670_sunny.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libc++",
+                "libdl",
                 "libc",
                 "libm",
             ],
@@ -10436,7 +10189,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmcamera_ppeiscore",
+    name: "libmmcamera_qtech_f3l8yam_eeprom",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -10444,43 +10197,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libmmcamera_ppeiscore.so",
-            ],
-            shared_libs: [
-                "libppeiscore_shim",
-                "libdl",
-                "libcutils",
-                "liblog",
-                "libgui",
-                "libEGL",
-                "libGLESv2_adreno",
-                "libhardware",
-                "libqdMetaData",
-                "libutils",
-                "libui",
-                "libmmcamera_dbg",
-                "libmmcamera_imglib",
-                "libc++",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_qtech_imx258_eeprom",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_qtech_imx258_eeprom.so",
+                "proprietary/vendor/lib/libmmcamera_qtech_f3l8yam_eeprom.so",
             ],
             shared_libs: [
                 "liblog",
@@ -10499,7 +10216,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmcamera_qtech_ov13855_eeprom",
+    name: "libmmcamera_qtech_f5670bq_eeprom",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -10507,115 +10224,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libmmcamera_qtech_ov13855_eeprom.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmmcamera_eeprom_util",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_qtech_s5k3l8_eeprom",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_qtech_s5k3l8_eeprom.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmmcamera_eeprom_util",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_qtech_s5k5e8_eeprom",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_qtech_s5k5e8_eeprom.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmmcamera_eeprom_util",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_quadracfa",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_quadracfa.so",
-            ],
-            shared_libs: [
-                "libdl",
-                "libcutils",
-                "liblog",
-                "libremosaic_daemon",
-                "libc++",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_rohm_brcg064gwz_3_eeprom",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_rohm_brcg064gwz_3_eeprom.so",
+                "proprietary/vendor/lib/libmmcamera_qtech_f5670bq_eeprom.so",
             ],
             shared_libs: [
                 "liblog",
@@ -10659,6 +10268,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmmcamera_s5k3l8_eeprom",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libmmcamera_s5k3l8_eeprom.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libmmcamera_eeprom_util",
+                "libc++",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmmcamera_s5k3l8_mono",
     owner: "xiaomi",
     strip: {
@@ -10684,7 +10320,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmcamera_s5k3l8_ofilm",
+    name: "libmmcamera_s5k4h8",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -10692,7 +10328,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libmmcamera_s5k3l8_ofilm.so",
+                "proprietary/vendor/lib/libmmcamera_s5k4h8.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -10709,7 +10345,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmcamera_s5k3l8_qtech",
+    name: "libmmcamera_s5k5e8",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -10717,7 +10353,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libmmcamera_s5k3l8_qtech.so",
+                "proprietary/vendor/lib/libmmcamera_s5k5e8.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -10734,7 +10370,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmcamera_s5k3l8_sunny",
+    name: "libmmcamera_s5k5e8_eeprom",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -10742,85 +10378,12 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libmmcamera_s5k3l8_sunny.so",
+                "proprietary/vendor/lib/libmmcamera_s5k5e8_eeprom.so",
             ],
             shared_libs: [
+                "liblog",
                 "libcutils",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_s5k5e8_ofilm",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_s5k5e8_ofilm.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_s5k5e8_qtech",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_s5k5e8_qtech.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_s5k5e8_sunny",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_s5k5e8_sunny.so",
-            ],
-            shared_libs: [
-                "libcutils",
+                "libmmcamera_eeprom_util",
                 "libc++",
                 "libdl",
                 "libc",
@@ -10861,7 +10424,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmcamera_sunny_imx258_eeprom",
+    name: "libmmcamera_sunny_8865_eeprom",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -10869,7 +10432,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libmmcamera_sunny_imx258_eeprom.so",
+                "proprietary/vendor/lib/libmmcamera_sunny_8865_eeprom.so",
             ],
             shared_libs: [
                 "liblog",
@@ -10888,7 +10451,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmcamera_sunny_s5k3l8_eeprom",
+    name: "libmmcamera_sunny_q13v06k_eeprom",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -10896,7 +10459,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libmmcamera_sunny_s5k3l8_eeprom.so",
+                "proprietary/vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so",
             ],
             shared_libs: [
                 "liblog",
@@ -10915,7 +10478,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmcamera_sunny_s5k5e8_eeprom",
+    name: "libmmcamera_sunny_q5v41b_eeprom",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -10923,7 +10486,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libmmcamera_sunny_s5k5e8_eeprom.so",
+                "proprietary/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so",
             ],
             shared_libs: [
                 "liblog",
@@ -10931,35 +10494,6 @@ cc_prebuilt_library_shared {
                 "libmmcamera_eeprom_util",
                 "libc++",
                 "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_sw2d_lib",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_sw2d_lib.so",
-            ],
-            shared_libs: [
-                "libmmcamera_imglib",
-                "libmmcamera_dbg",
-                "libdl",
-                "libcutils",
-                "liblog",
-                "libfastcvopt",
-                "libc++",
                 "libc",
                 "libm",
             ],
@@ -11133,33 +10667,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmcamera_truly_cmb433_eeprom",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_truly_cmb433_eeprom.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmmcamera_eeprom_util",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmmcamera_tuning",
     owner: "xiaomi",
     strip: {
@@ -11184,7 +10691,6 @@ cc_prebuilt_library_shared {
                 "libdl",
                 "libcutils",
                 "libfastcvopt",
-                "libmmcamera_dbg",
                 "libc++",
                 "libc",
                 "libm",
@@ -11335,32 +10841,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmpbase",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmpbase.so",
-            ],
-            shared_libs: [
-                "libcamshim",
-                "libc",
-                "libm",
-                "libstdc++_vendor",
-                "libdl",
-                "liblog",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libois_lc898122",
     owner: "xiaomi",
     strip: {
@@ -11397,12 +10877,12 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/liboptizoom.so",
             ],
             shared_libs: [
-                "libz",
-                "libdl",
                 "liblog",
+                "libdl",
+                "libz",
+                "libc",
                 "libm",
                 "libstdc++_vendor",
-                "libc",
             ],
         },
     },
@@ -11497,32 +10977,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libremosaic_daemon",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libremosaic_daemon.so",
-            ],
-            shared_libs: [
-                "libdl",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libseemore",
     owner: "xiaomi",
     strip: {
@@ -11586,12 +11040,12 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libtrueportrait.so",
             ],
             shared_libs: [
-                "libz",
-                "libdl",
                 "liblog",
+                "libdl",
+                "libz",
+                "libc",
                 "libm",
                 "libstdc++_vendor",
-                "libc",
             ],
         },
     },
