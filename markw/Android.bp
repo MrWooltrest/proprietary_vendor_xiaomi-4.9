@@ -10118,7 +10118,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libmmcamera_ov5670.so",
             ],
             shared_libs: [
-                "liblog",
                 "libcutils",
                 "libc++",
                 "libdl",
@@ -10173,7 +10172,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libmmcamera_ov5670_sunny.so",
             ],
             shared_libs: [
-                "liblog",
                 "libcutils",
                 "libc++",
                 "libdl",
@@ -10342,7 +10340,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libmmcamera_s5k3l8.so",
             ],
             shared_libs: [
-                "liblog",
                 "libcutils",
                 "libc++",
                 "libdl",
@@ -10397,7 +10394,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libmmcamera_s5k3l8_mono.so",
             ],
             shared_libs: [
-                "liblog",
                 "libcutils",
                 "libc++",
                 "libdl",
