@@ -18581,6 +18581,8 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/mm-qcamera-daemon",
             ],
             shared_libs: [
+                "libc_pthreadts_shim",
+                "libc_mutexdestroy_shim",
                 "libcutils",
                 "libdl",
                 "libmmcamera2_mct",
